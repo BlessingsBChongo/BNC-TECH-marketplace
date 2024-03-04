@@ -1,0 +1,387 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #005a9e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #1f88be;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #005a9e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.container {
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1f88be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+.add-to-cart {
+    background-color: #1f88be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #005a9e;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.welcome-section {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+}
+
+.featured-products,
+.why-choose-us,
+.latest-news {
+    padding: 20px;
+}
+.featured-products {
+    padding: 20px;
+}
+
+.product-preview {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.product-item h3 {
+    color: #333;
+}
+
+.product-item p {
+    color: #666;
+}
+
+/* Handles the preview of products*/
+.featured-products {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.product-preview-container {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+}
+
+.product-preview {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.product-item {
+    flex: 0 0 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.prev-product, .next-product {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    outline: none;
+    border-radius: 50%;
+}
+
+.prev-product {
+    left: 10px;
+}
+
+.next-product {
+    right: 10px;
+}
+
+.prev-product:hover, .next-product:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/*.product-preview-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.product-preview {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.product-item {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}*/
+/*.why-choose-us {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.reasons-container {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease;
+}
+
+.reason-item {
+    flex: 0 0 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+button.prev-reason, button.next-reason {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+button.prev-reason {
+    left: 0;
+}
+
+button.next-reason {
+    right: 0;
+}
+*/
+.why-choose-us {
+    text-align: center;
+    padding: 50px 0;
+    position: relative; /* Added position relative */
+}
+
+.reasons-container {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+}
+
+.reason-item {
+    flex: 0 0 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.reason-item:hover {
+    transform: translateY(-5px);
+}
+
+button.prev-reason, button.next-reason {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+    outline: none;
+    border-radius: 50%;
+}
+
+.prev-reason {
+    left: 10px;
+}
+
+.next-reason {
+    right: 10px;
+}
+
+.prev-reason:hover, .next-reason:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
